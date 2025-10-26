@@ -22,6 +22,16 @@
 
      -------------------------------------*/
 
+    var carouselInitialized = false;
+    var initCarousels = function () {
+        if (carouselInitialized) {
+            return;
+        }
+        if (typeof $.fn.owlCarousel !== 'function') {
+            setTimeout(initCarousels, 50);
+            return;
+        }
+        carouselInitialized = true;
     $('.gym-carousel').each(function () {
 
         var carousel = $(this),
@@ -165,6 +175,8 @@
 
 
     });
+    };
+    initCarousels();
 
 
     /*---------------------------
