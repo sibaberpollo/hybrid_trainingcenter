@@ -16,8 +16,8 @@ const LegacyScripts = () => (
     <Script src="/js/jquery.counterup.min.js" strategy="afterInteractive" />
     <Script src="/js/jquery.magnific-popup.min.js" strategy="afterInteractive" />
     <Script src="/js/wow.min.js" strategy="afterInteractive" />
-    <Script src="/js/plugins.js" strategy="lazyOnload" />
-    <Script src="/js/main.js" strategy="lazyOnload" />
+    <Script src="/js/plugins.js" strategy="afterInteractive" />
+    <Script src="/js/main.js" strategy="afterInteractive" />
   </>
 );
 
