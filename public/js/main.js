@@ -609,8 +609,6 @@
 
             }
 
-            console.log(topBarH);
-
             if (windowpos >= topBarH) {
 
                 s.addClass('stick');
